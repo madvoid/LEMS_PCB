@@ -1986,6 +1986,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="SPITERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
 <part name="REDJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
 <part name="GREENJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
+<part name="U$11" library="LEMS" deviceset="3PINHEADER" device="S"/>
+<part name="U$12" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$13" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$14" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$15" library="LEMS" deviceset="2PINHEADER" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -2062,6 +2067,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="SPITERM" gate="G$1" x="322.58" y="121.92"/>
 <instance part="REDJUMPER" gate="G$1" x="55.88" y="226.06"/>
 <instance part="GREENJUMPER" gate="G$1" x="58.42" y="218.44" rot="R180"/>
+<instance part="U$11" gate="G$1" x="198.12" y="243.84" rot="R90"/>
+<instance part="U$12" gate="G$1" x="218.44" y="243.84" rot="R90"/>
+<instance part="U$13" gate="G$1" x="238.76" y="243.84" rot="R90"/>
+<instance part="U$14" gate="G$1" x="261.62" y="243.84" rot="R90"/>
+<instance part="U$15" gate="G$1" x="281.94" y="243.84" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2466,84 +2476,98 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <segment>
 <pinref part="23-37" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="167.64" x2="279.4" y2="167.64" width="0.1524" layer="91"/>
+<label x="276.86" y="167.64" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D25" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="165.1" x2="279.4" y2="165.1" width="0.1524" layer="91"/>
+<label x="276.86" y="165.1" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D27" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="3"/>
 <wire x1="294.64" y1="162.56" x2="279.4" y2="162.56" width="0.1524" layer="91"/>
+<label x="276.86" y="162.56" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D29" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="4"/>
 <wire x1="294.64" y1="160.02" x2="279.4" y2="160.02" width="0.1524" layer="91"/>
+<label x="276.86" y="160.02" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D31" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="5"/>
 <wire x1="294.64" y1="157.48" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
+<label x="276.86" y="157.48" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D33" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="6"/>
 <wire x1="294.64" y1="154.94" x2="279.4" y2="154.94" width="0.1524" layer="91"/>
+<label x="276.86" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D35" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="7"/>
 <wire x1="294.64" y1="152.4" x2="279.4" y2="152.4" width="0.1524" layer="91"/>
+<label x="276.86" y="152.4" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D37" class="0">
 <segment>
 <pinref part="23-37" gate="G$1" pin="8"/>
 <wire x1="294.64" y1="149.86" x2="279.4" y2="149.86" width="0.1524" layer="91"/>
+<label x="276.86" y="149.86" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D39" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
+<label x="276.86" y="137.16" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D41" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
+<label x="276.86" y="134.62" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D43" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="3"/>
 <wire x1="294.64" y1="132.08" x2="279.4" y2="132.08" width="0.1524" layer="91"/>
+<label x="276.86" y="132.08" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D45" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="4"/>
 <wire x1="294.64" y1="129.54" x2="279.4" y2="129.54" width="0.1524" layer="91"/>
+<label x="276.86" y="129.54" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D47" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="5"/>
 <wire x1="294.64" y1="127" x2="279.4" y2="127" width="0.1524" layer="91"/>
+<label x="276.86" y="127" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D49" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="6"/>
 <wire x1="294.64" y1="124.46" x2="279.4" y2="124.46" width="0.1524" layer="91"/>
+<label x="276.86" y="124.46" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2569,84 +2593,98 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <segment>
 <pinref part="22-36" gate="G$1" pin="1"/>
 <wire x1="264.16" y1="167.64" x2="248.92" y2="167.64" width="0.1524" layer="91"/>
+<label x="246.38" y="167.64" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D24" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="165.1" x2="248.92" y2="165.1" width="0.1524" layer="91"/>
+<label x="246.38" y="165.1" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D26" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="3"/>
 <wire x1="264.16" y1="162.56" x2="248.92" y2="162.56" width="0.1524" layer="91"/>
+<label x="246.38" y="162.56" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D28" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="4"/>
 <wire x1="264.16" y1="160.02" x2="248.92" y2="160.02" width="0.1524" layer="91"/>
+<label x="246.38" y="160.02" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D30" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="5"/>
 <wire x1="264.16" y1="157.48" x2="248.92" y2="157.48" width="0.1524" layer="91"/>
+<label x="246.38" y="157.48" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D32" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="6"/>
 <wire x1="264.16" y1="154.94" x2="248.92" y2="154.94" width="0.1524" layer="91"/>
+<label x="246.38" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D34" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="7"/>
 <wire x1="264.16" y1="152.4" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
+<label x="246.38" y="152.4" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D36" class="0">
 <segment>
 <pinref part="22-36" gate="G$1" pin="8"/>
 <wire x1="264.16" y1="149.86" x2="248.92" y2="149.86" width="0.1524" layer="91"/>
+<label x="246.38" y="149.86" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D38" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="1"/>
 <wire x1="264.16" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="91"/>
+<label x="246.38" y="137.16" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D40" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="134.62" x2="248.92" y2="134.62" width="0.1524" layer="91"/>
+<label x="246.38" y="134.62" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D42" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="3"/>
 <wire x1="264.16" y1="132.08" x2="248.92" y2="132.08" width="0.1524" layer="91"/>
+<label x="246.38" y="132.08" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D44" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="4"/>
 <wire x1="264.16" y1="129.54" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
+<label x="246.38" y="129.54" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D46" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="5"/>
 <wire x1="264.16" y1="127" x2="248.92" y2="127" width="0.1524" layer="91"/>
+<label x="246.38" y="127" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D48" class="0">
 <segment>
 <pinref part="38-52" gate="G$1" pin="6"/>
 <wire x1="264.16" y1="124.46" x2="248.92" y2="124.46" width="0.1524" layer="91"/>
+<label x="246.38" y="124.46" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">

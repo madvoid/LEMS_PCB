@@ -1086,6 +1086,33 @@ A3 Larger Frame</description>
 <rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
 <rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
 </package>
+<package name="DIL16">
+<description>16-pin Dual Inline Package</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.3048" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.3048" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.3048" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.3048" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.3048" layer="21"/>
+<wire x1="-10.16" y1="-1.016" x2="-10.16" y2="1.016" width="0.3048" layer="21" curve="180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="10PINHEADER">
@@ -1435,6 +1462,29 @@ A3 Larger Frame</description>
 <pin name="NC" x="12.7" y="2.54" length="middle" direction="nc" rot="R180"/>
 <pin name="DNC2" x="12.7" y="7.62" length="middle" direction="nc" rot="R180"/>
 <text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="ADS7841">
+<wire x1="-7.62" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="17.78" length="middle" direction="pwr"/>
+<pin name="CH0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="CH1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="CH2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="CH3" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="COM" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="/SHDN" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="VREF" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="VCC@2" x="12.7" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="MODE" x="12.7" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="DOUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="BUSY" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="DIN" x="12.7" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="/CS" x="12.7" y="12.7" length="middle" direction="in" rot="R180"/>
+<pin name="DCLK" x="12.7" y="17.78" length="middle" direction="in" rot="R180"/>
+<text x="-7.62" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1974,6 +2024,37 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
+<deviceset name="ADS7841">
+<description>4 Channel 12 bit ADC by Burr-Brown</description>
+<gates>
+<gate name="ADS7841" symbol="ADS7841" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="DIL16">
+<connects>
+<connect gate="ADS7841" pin="/CS" pad="15"/>
+<connect gate="ADS7841" pin="/SHDN" pad="7"/>
+<connect gate="ADS7841" pin="BUSY" pad="13"/>
+<connect gate="ADS7841" pin="CH0" pad="2"/>
+<connect gate="ADS7841" pin="CH1" pad="3"/>
+<connect gate="ADS7841" pin="CH2" pad="4"/>
+<connect gate="ADS7841" pin="CH3" pad="5"/>
+<connect gate="ADS7841" pin="COM" pad="6"/>
+<connect gate="ADS7841" pin="DCLK" pad="16"/>
+<connect gate="ADS7841" pin="DIN" pad="14"/>
+<connect gate="ADS7841" pin="DOUT" pad="12"/>
+<connect gate="ADS7841" pin="GND" pad="10"/>
+<connect gate="ADS7841" pin="MODE" pad="11"/>
+<connect gate="ADS7841" pin="VCC" pad="1"/>
+<connect gate="ADS7841" pin="VCC@2" pad="9"/>
+<connect gate="ADS7841" pin="VREF" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2063,6 +2144,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="10UF-LOWESR" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
 <part name="GND14" library="LEMS" deviceset="GND" device=""/>
 <part name="AREFJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
+<part name="U$12" library="LEMS" deviceset="ADS7841" device="P"/>
+<part name="U$13" library="LEMS" deviceset="5V" device=""/>
+<part name="0.1UF-3" library="LEMS" deviceset="CERAMICCAP" device="L"/>
+<part name="10UF-2" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
+<part name="GND15" library="LEMS" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2151,6 +2237,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="10UF-LOWESR" gate="G$1" x="78.74" y="58.42"/>
 <instance part="GND14" gate="1" x="78.74" y="50.8"/>
 <instance part="AREFJUMPER" gate="G$1" x="27.94" y="20.32"/>
+<instance part="U$12" gate="ADS7841" x="165.1" y="71.12"/>
+<instance part="U$13" gate="G$1" x="137.16" y="88.9"/>
+<instance part="0.1UF-3" gate="G$1" x="139.7" y="104.14"/>
+<instance part="10UF-2" gate="G$1" x="149.86" y="104.14"/>
+<instance part="GND15" gate="1" x="144.78" y="116.84" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2274,6 +2365,31 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <segment>
 <pinref part="10UF-LOWESR" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="0.1UF-3" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="106.68" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="10UF-2" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="114.3" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<junction x="144.78" y="114.3"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="COM"/>
+<wire x1="152.4" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<label x="124.46" y="63.5" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="GND"/>
+<wire x1="177.8" y1="58.42" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
+<label x="187.96" y="58.42" size="1.27" layer="95"/>
+<pinref part="U$12" gate="ADS7841" pin="MODE"/>
+<wire x1="182.88" y1="58.42" x2="187.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="63.5" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
+<junction x="182.88" y="58.42"/>
 </segment>
 </net>
 <net name="MOSI_SOFT" class="0">
@@ -2457,6 +2573,29 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="27.94" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <junction x="27.94" y="66.04"/>
 <label x="22.86" y="66.04" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="VCC"/>
+<wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="5V"/>
+<pinref part="0.1UF-3" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="88.9" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+<junction x="139.7" y="88.9"/>
+<pinref part="10UF-2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="88.9" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
+<junction x="149.86" y="88.9"/>
+<pinref part="U$12" gate="ADS7841" pin="/SHDN"/>
+<wire x1="152.4" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="58.42" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<junction x="144.78" y="88.9"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="VCC@2"/>
+<wire x1="177.8" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
+<label x="187.96" y="53.34" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="I2C-2" class="0">
@@ -2747,12 +2886,22 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="327.66" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
 <label x="335.28" y="121.92" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="DIN"/>
+<wire x1="177.8" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="200.66" y="78.74" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="SS" class="0">
 <segment>
 <pinref part="39-53" gate="G$1" pin="8"/>
 <wire x1="294.64" y1="119.38" x2="279.4" y2="119.38" width="0.1524" layer="91"/>
 <label x="276.86" y="119.38" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="/CS"/>
+<wire x1="177.8" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+<label x="200.66" y="83.82" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D22" class="0">
@@ -2864,6 +3013,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="327.66" y1="124.46" x2="337.82" y2="124.46" width="0.1524" layer="91"/>
 <label x="335.28" y="124.46" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="DOUT"/>
+<wire x1="177.8" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
+<label x="200.66" y="68.58" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -2875,6 +3029,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="SPITERM" gate="G$1" pin="1"/>
 <wire x1="327.66" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
 <label x="335.28" y="119.38" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="DCLK"/>
+<wire x1="177.8" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="200.66" y="88.9" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="A15" class="0">
@@ -3238,6 +3397,46 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="AREFJUMPER" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="17.78" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="VREF"/>
+<wire x1="152.4" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<label x="124.46" y="53.34" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="CH0" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH0"/>
+<wire x1="152.4" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<label x="124.46" y="83.82" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="CH1" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH1"/>
+<wire x1="152.4" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<label x="124.46" y="78.74" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="CH2" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH2"/>
+<wire x1="152.4" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
+<label x="124.46" y="73.66" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="CH3" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH3"/>
+<wire x1="152.4" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<label x="124.46" y="68.58" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="BUSY" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="BUSY"/>
+<wire x1="177.8" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
+<label x="187.96" y="73.66" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
