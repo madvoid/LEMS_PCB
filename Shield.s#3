@@ -1986,6 +1986,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="SPITERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
 <part name="REDJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
 <part name="GREENJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
+<part name="U$11" library="LEMS" deviceset="3PINHEADER" device="S"/>
+<part name="U$12" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$13" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$14" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="U$15" library="LEMS" deviceset="2PINHEADER" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -2062,6 +2067,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="SPITERM" gate="G$1" x="322.58" y="121.92"/>
 <instance part="REDJUMPER" gate="G$1" x="55.88" y="226.06"/>
 <instance part="GREENJUMPER" gate="G$1" x="58.42" y="218.44" rot="R180"/>
+<instance part="U$11" gate="G$1" x="203.2" y="241.3" rot="R90"/>
+<instance part="U$12" gate="G$1" x="223.52" y="241.3" rot="R90"/>
+<instance part="U$13" gate="G$1" x="243.84" y="241.3" rot="R90"/>
+<instance part="U$14" gate="G$1" x="266.7" y="241.3" rot="R90"/>
+<instance part="U$15" gate="G$1" x="287.02" y="241.3" rot="R90"/>
 </instances>
 <busses>
 </busses>

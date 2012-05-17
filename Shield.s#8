@@ -2157,6 +2157,16 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="10.16" y1="119.38" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
 <junction x="10.16" y="111.76"/>
 </segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="6"/>
+<wire x1="91.44" y1="15.24" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<label x="91.44" y="25.4" size="1.27" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="7"/>
+<wire x1="93.98" y1="15.24" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
+<label x="93.98" y="25.4" size="1.27" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="MOSI_SOFT" class="0">
 <segment>
@@ -2327,17 +2337,24 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="U$9" gate="MCP1700-330" pin="VCC"/>
 <pinref part="U$10" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="5"/>
+<wire x1="88.9" y1="15.24" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<label x="88.9" y="25.4" size="1.27" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="I2C-2" class="0">
 <segment>
 <pinref part="8-13" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="243.84" x2="76.2" y2="233.68" width="0.1524" layer="91"/>
+<label x="76.2" y="228.6" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="I2C-3" class="0">
 <segment>
 <pinref part="8-13" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="243.84" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
+<label x="78.74" y="228.6" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -2347,22 +2364,25 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="81.28" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="P7" class="0">
 <segment>
 <pinref part="0-7" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="243.84" x2="121.92" y2="233.68" width="0.1524" layer="91"/>
+<label x="121.92" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="P6" class="0">
 <segment>
 <pinref part="0-7" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="243.84" x2="124.46" y2="233.68" width="0.1524" layer="91"/>
+<label x="124.46" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="P5" class="0">
 <segment>
 <pinref part="0-7" gate="G$1" pin="3"/>
 <wire x1="127" y1="243.84" x2="127" y2="233.68" width="0.1524" layer="91"/>
+<label x="127" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TN9_ACT" class="0">
@@ -2653,130 +2673,130 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="335.28" y="119.38" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$59" class="0">
+<net name="A15" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="8"/>
 <wire x1="175.26" y1="15.24" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
+<label x="175.26" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$60" class="0">
+<net name="A14" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="7"/>
 <wire x1="172.72" y1="15.24" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<label x="172.72" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="A13" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="6"/>
 <wire x1="170.18" y1="15.24" x2="170.18" y2="25.4" width="0.1524" layer="91"/>
+<label x="170.18" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$62" class="0">
+<net name="A12" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="5"/>
 <wire x1="167.64" y1="15.24" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="167.64" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$63" class="0">
+<net name="A11" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="4"/>
 <wire x1="165.1" y1="15.24" x2="165.1" y2="25.4" width="0.1524" layer="91"/>
+<label x="165.1" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$64" class="0">
+<net name="A10" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="15.24" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="162.56" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="A9" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="15.24" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
+<label x="160.02" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$66" class="0">
+<net name="A8" class="0">
 <segment>
 <pinref part="A8-A15" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="15.24" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$67" class="0">
+<net name="A7" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="8"/>
 <wire x1="134.62" y1="15.24" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+<label x="134.62" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$68" class="0">
+<net name="A6" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="7"/>
 <wire x1="132.08" y1="15.24" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="132.08" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$69" class="0">
+<net name="A5" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="6"/>
 <wire x1="129.54" y1="15.24" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
+<label x="129.54" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$70" class="0">
+<net name="A4" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="5"/>
 <wire x1="127" y1="15.24" x2="127" y2="25.4" width="0.1524" layer="91"/>
+<label x="127" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$71" class="0">
+<net name="A3" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="4"/>
 <wire x1="124.46" y1="15.24" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<label x="124.46" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$72" class="0">
+<net name="A2" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="3"/>
 <wire x1="121.92" y1="15.24" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<label x="121.92" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$73" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="15.24" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+<label x="119.38" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$74" class="0">
+<net name="A0" class="0">
 <segment>
 <pinref part="A0-A7" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="15.24" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<label x="116.84" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="8"/>
 <wire x1="96.52" y1="15.24" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
+<label x="96.52" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$76" class="0">
-<segment>
-<pinref part="POWER" gate="G$1" pin="7"/>
-<wire x1="93.98" y1="15.24" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$77" class="0">
-<segment>
-<pinref part="POWER" gate="G$1" pin="6"/>
-<wire x1="91.44" y1="15.24" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$78" class="0">
-<segment>
-<pinref part="POWER" gate="G$1" pin="5"/>
-<wire x1="88.9" y1="15.24" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$79" class="0">
+<net name="MEGA3.3V" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="4"/>
 <wire x1="86.36" y1="15.24" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<label x="86.36" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -2794,16 +2814,18 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="25.4" y="198.12" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$81" class="0">
+<net name="IOREF" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="15.24" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
+<label x="81.28" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$82" class="0">
+<net name="UNUSED" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="15.24" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<label x="78.74" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$83" class="0">
