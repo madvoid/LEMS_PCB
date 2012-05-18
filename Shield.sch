@@ -2319,7 +2319,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="0.1UF-4" library="LEMS" deviceset="CERAMICCAP" device="L"/>
 <part name="OPA2TERM" library="LEMS" deviceset="3PINHEADER" device="N"/>
 <part name="DALLASTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
-<part name="U$16" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="4.7K" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="GND17" library="LEMS" deviceset="GND" device=""/>
 <part name="U$17" library="LEMS" deviceset="2PINHEADER" device="S"/>
 <part name="ADCTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
@@ -2329,10 +2329,10 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="GND18" library="LEMS" deviceset="GND" device=""/>
 <part name="GND19" library="LEMS" deviceset="GND" device=""/>
 <part name="U$19" library="LEMS" deviceset="ELECTROLYTICCAP" device="L"/>
-<part name="U$20" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="1" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="GND20" library="LEMS" deviceset="GND" device=""/>
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
-<part name="U$21" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="PWRTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
 <part name="GND21" library="LEMS" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -2439,7 +2439,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="0.1UF-4" gate="G$1" x="236.22" y="132.08"/>
 <instance part="OPA2TERM" gate="G$1" x="228.6" y="86.36" rot="R90"/>
 <instance part="DALLASTERM" gate="G$1" x="322.58" y="147.32"/>
-<instance part="U$16" gate="G$1" x="345.44" y="147.32"/>
+<instance part="4.7K" gate="G$1" x="345.44" y="147.32"/>
 <instance part="GND17" gate="1" x="175.26" y="121.92"/>
 <instance part="U$17" gate="G$1" x="91.44" y="81.28" rot="R270"/>
 <instance part="ADCTERM" gate="G$1" x="109.22" y="76.2"/>
@@ -2449,10 +2449,10 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="GND18" gate="1" x="269.24" y="27.94"/>
 <instance part="GND19" gate="1" x="233.68" y="43.18" rot="R270"/>
 <instance part="U$19" gate="G$1" x="264.16" y="71.12" rot="R90"/>
-<instance part="U$20" gate="G$1" x="274.32" y="71.12" rot="R180"/>
+<instance part="1" gate="G$1" x="274.32" y="71.12" rot="R180"/>
 <instance part="GND20" gate="1" x="281.94" y="71.12" rot="R90"/>
 <instance part="PWRSWTCH" gate="G$1" x="302.26" y="40.64"/>
-<instance part="U$21" gate="G$1" x="325.12" y="43.18"/>
+<instance part="PWRTERM" gate="G$1" x="325.12" y="43.18"/>
 <instance part="GND21" gate="1" x="337.82" y="38.1"/>
 </instances>
 <busses>
@@ -2643,11 +2643,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="236.22" y="43.18"/>
 </segment>
 <segment>
-<pinref part="U$20" gate="G$1" pin="1"/>
+<pinref part="1" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$21" gate="G$1" pin="1"/>
+<pinref part="PWRTERM" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="40.64" x2="337.82" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
@@ -2873,7 +2873,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="DALLASTERM" gate="G$1" pin="3"/>
 <wire x1="327.66" y1="149.86" x2="350.52" y2="149.86" width="0.1524" layer="91"/>
 <label x="332.74" y="149.86" size="1.27" layer="95"/>
-<pinref part="U$16" gate="G$1" pin="2"/>
+<pinref part="4.7K" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="149.86" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3139,6 +3139,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="39-53" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="276.86" y="137.16" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="DALLASTERM" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="147.32" x2="337.82" y2="147.32" width="0.1524" layer="91"/>
+<label x="332.74" y="147.32" size="1.27" layer="95"/>
+<pinref part="4.7K" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="147.32" x2="340.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="147.32" x2="337.82" y2="160.02" width="0.1524" layer="91"/>
+<junction x="337.82" y="147.32"/>
 </segment>
 </net>
 <net name="D41" class="0">
@@ -3813,14 +3822,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="236.22" y1="111.76" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DALDATA" class="0">
-<segment>
-<pinref part="DALLASTERM" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="147.32" x2="340.36" y2="147.32" width="0.1524" layer="91"/>
-<label x="332.74" y="147.32" size="1.27" layer="95"/>
-<pinref part="U$16" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$18" gate="G$1" pin="RESET"/>
@@ -3846,18 +3847,25 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$19" gate="G$1" pin="2"/>
-<pinref part="U$20" gate="G$1" pin="2"/>
+<pinref part="1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWRN" class="0">
 <segment>
-<pinref part="U$21" gate="G$1" pin="2"/>
+<pinref part="PWRTERM" gate="G$1" pin="2"/>
 <wire x1="330.2" y1="43.18" x2="330.2" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="PWRSWTCH" gate="G$1" pin="O"/>
 <wire x1="330.2" y1="50.8" x2="304.8" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="50.8" x2="304.8" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="43.18" x2="337.82" y2="43.18" width="0.1524" layer="91"/>
 <junction x="330.2" y="43.18"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="GND" gate="G$1" pin="2"/>
+<wire x1="284.48" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
