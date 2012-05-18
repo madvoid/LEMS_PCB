@@ -2269,8 +2269,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="2.2K" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="2.2K-2" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="U$6" library="LEMS" deviceset="5V" device=""/>
-<part name="U$4" library="LEMS" deviceset="MOSFETN" device="N"/>
-<part name="U$7" library="LEMS" deviceset="MOSFETN" device="N"/>
+<part name="SDAMOSFET" library="LEMS" deviceset="MOSFETN" device="N"/>
+<part name="SCLMOSFET" library="LEMS" deviceset="MOSFETN" device="N"/>
 <part name="3.3VI2CTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
 <part name="2.2K-3" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="2.2K-4" library="LEMS" deviceset="RESISTOR" device="T"/>
@@ -2321,14 +2321,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="DALLASTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
 <part name="4.7K" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="GND17" library="LEMS" deviceset="GND" device=""/>
-<part name="U$17" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="4.5VTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
 <part name="ADCTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
 <part name="U$18" library="LEMS" deviceset="TPS7250" device="D"/>
 <part name="250K" library="LEMS" deviceset="RESISTOR" device="N"/>
 <part name="0.1UF-5" library="LEMS" deviceset="CERAMICCAP" device="L"/>
 <part name="GND18" library="LEMS" deviceset="GND" device=""/>
 <part name="GND19" library="LEMS" deviceset="GND" device=""/>
-<part name="U$19" library="LEMS" deviceset="ELECTROLYTICCAP" device="L"/>
+<part name="6.8U-T" library="LEMS" deviceset="ELECTROLYTICCAP" device="L"/>
 <part name="1" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="GND20" library="LEMS" deviceset="GND" device=""/>
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
@@ -2387,8 +2387,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="2.2K" gate="G$1" x="180.34" y="170.18"/>
 <instance part="2.2K-2" gate="G$1" x="195.58" y="165.1"/>
 <instance part="U$6" gate="G$1" x="170.18" y="167.64" rot="R90"/>
-<instance part="U$4" gate="G$1" x="213.36" y="210.82" rot="R270"/>
-<instance part="U$7" gate="G$1" x="223.52" y="193.04" rot="R270"/>
+<instance part="SDAMOSFET" gate="G$1" x="213.36" y="210.82" rot="R270"/>
+<instance part="SCLMOSFET" gate="G$1" x="223.52" y="193.04" rot="R270"/>
 <instance part="3.3VI2CTERM" gate="G$1" x="175.26" y="210.82"/>
 <instance part="2.2K-3" gate="G$1" x="190.5" y="215.9" rot="R90"/>
 <instance part="2.2K-4" gate="G$1" x="198.12" y="213.36" rot="R90"/>
@@ -2441,14 +2441,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="DALLASTERM" gate="G$1" x="322.58" y="147.32"/>
 <instance part="4.7K" gate="G$1" x="345.44" y="147.32"/>
 <instance part="GND17" gate="1" x="175.26" y="121.92"/>
-<instance part="U$17" gate="G$1" x="91.44" y="81.28" rot="R270"/>
+<instance part="4.5VTERM" gate="G$1" x="91.44" y="81.28" rot="R270"/>
 <instance part="ADCTERM" gate="G$1" x="109.22" y="76.2"/>
 <instance part="U$18" gate="G$1" x="248.92" y="45.72"/>
 <instance part="250K" gate="G$1" x="223.52" y="53.34" rot="R90"/>
 <instance part="0.1UF-5" gate="G$1" x="269.24" y="35.56"/>
 <instance part="GND18" gate="1" x="269.24" y="27.94"/>
 <instance part="GND19" gate="1" x="233.68" y="43.18" rot="R270"/>
-<instance part="U$19" gate="G$1" x="264.16" y="71.12" rot="R90"/>
+<instance part="6.8U-T" gate="G$1" x="264.16" y="71.12" rot="R90"/>
 <instance part="1" gate="G$1" x="274.32" y="71.12" rot="R180"/>
 <instance part="GND20" gate="1" x="281.94" y="71.12" rot="R90"/>
 <instance part="PWRSWTCH" gate="G$1" x="302.26" y="40.64"/>
@@ -2751,11 +2751,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="P+3" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="G"/>
+<pinref part="SDAMOSFET" gate="G$1" pin="G"/>
 <pinref part="P+4" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="G"/>
+<pinref part="SCLMOSFET" gate="G$1" pin="G"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -2891,7 +2891,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="U$18" gate="G$1" pin="OUT1"/>
 <wire x1="261.62" y1="48.26" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
 <junction x="261.62" y="53.34"/>
-<pinref part="U$19" gate="G$1" pin="1"/>
+<pinref part="6.8U-T" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="71.12" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="261.62" y="63.5"/>
 <wire x1="261.62" y1="58.42" x2="284.48" y2="58.42" width="0.1524" layer="91"/>
@@ -2953,9 +2953,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="129.54" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="TN9TERM" gate="G$1" pin="1"/>
-<wire x1="289.56" y1="233.68" x2="289.56" y2="243.84" width="0.1524" layer="91"/>
-<label x="289.56" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="TN9TERM" gate="G$1" pin="3"/>
+<wire x1="284.48" y1="233.68" x2="284.48" y2="243.84" width="0.1524" layer="91"/>
+<label x="284.48" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TN9_CLK" class="0">
@@ -2977,9 +2977,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="134.62" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="TN9TERM" gate="G$1" pin="3"/>
-<wire x1="284.48" y1="233.68" x2="284.48" y2="243.84" width="0.1524" layer="91"/>
-<label x="284.48" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="TN9TERM" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="233.68" x2="289.56" y2="243.84" width="0.1524" layer="91"/>
+<label x="289.56" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX0" class="0">
@@ -2989,9 +2989,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="137.16" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USARTTERM" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="233.68" x2="309.88" y2="243.84" width="0.1524" layer="91"/>
-<label x="309.88" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USARTTERM" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="233.68" x2="307.34" y2="243.84" width="0.1524" layer="91"/>
+<label x="307.34" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RX0" class="0">
@@ -3001,9 +3001,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="139.7" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USARTTERM" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="233.68" x2="307.34" y2="243.84" width="0.1524" layer="91"/>
-<label x="307.34" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USARTTERM" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="233.68" x2="309.88" y2="243.84" width="0.1524" layer="91"/>
+<label x="309.88" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX3" class="0">
@@ -3013,9 +3013,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="160.02" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART3TERM" gate="G$1" pin="1"/>
-<wire x1="370.84" y1="233.68" x2="370.84" y2="243.84" width="0.1524" layer="91"/>
-<label x="370.84" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART3TERM" gate="G$1" pin="2"/>
+<wire x1="368.3" y1="233.68" x2="368.3" y2="243.84" width="0.1524" layer="91"/>
+<label x="368.3" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RX3" class="0">
@@ -3025,9 +3025,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="162.56" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART3TERM" gate="G$1" pin="2"/>
-<wire x1="368.3" y1="233.68" x2="368.3" y2="243.84" width="0.1524" layer="91"/>
-<label x="368.3" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART3TERM" gate="G$1" pin="1"/>
+<wire x1="370.84" y1="233.68" x2="370.84" y2="243.84" width="0.1524" layer="91"/>
+<label x="370.84" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX2" class="0">
@@ -3037,9 +3037,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="165.1" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART2TERM" gate="G$1" pin="1"/>
-<wire x1="350.52" y1="233.68" x2="350.52" y2="243.84" width="0.1524" layer="91"/>
-<label x="350.52" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART2TERM" gate="G$1" pin="2"/>
+<wire x1="347.98" y1="233.68" x2="347.98" y2="243.84" width="0.1524" layer="91"/>
+<label x="347.98" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RX2" class="0">
@@ -3049,9 +3049,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="167.64" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART2TERM" gate="G$1" pin="2"/>
-<wire x1="347.98" y1="233.68" x2="347.98" y2="243.84" width="0.1524" layer="91"/>
-<label x="347.98" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART2TERM" gate="G$1" pin="1"/>
+<wire x1="350.52" y1="233.68" x2="350.52" y2="243.84" width="0.1524" layer="91"/>
+<label x="350.52" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX1" class="0">
@@ -3061,9 +3061,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="170.18" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART1TERM" gate="G$1" pin="1"/>
-<wire x1="330.2" y1="233.68" x2="330.2" y2="243.84" width="0.1524" layer="91"/>
-<label x="330.2" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART1TERM" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="233.68" x2="327.66" y2="243.84" width="0.1524" layer="91"/>
+<label x="327.66" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RX1" class="0">
@@ -3073,9 +3073,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="172.72" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="USART1TERM" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="233.68" x2="327.66" y2="243.84" width="0.1524" layer="91"/>
-<label x="327.66" y="243.84" size="1.27" layer="95" rot="R90"/>
+<pinref part="USART1TERM" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="233.68" x2="330.2" y2="243.84" width="0.1524" layer="91"/>
+<label x="330.2" y="243.84" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D23" class="0">
@@ -3606,7 +3606,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="177.8" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="D"/>
+<pinref part="SCLMOSFET" gate="G$1" pin="D"/>
 <wire x1="228.6" y1="193.04" x2="243.84" y2="193.04" width="0.1524" layer="91"/>
 <label x="238.76" y="193.04" size="1.27" layer="95"/>
 </segment>
@@ -3633,14 +3633,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="175.26" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="D"/>
+<pinref part="SDAMOSFET" gate="G$1" pin="D"/>
 <wire x1="218.44" y1="210.82" x2="243.84" y2="210.82" width="0.1524" layer="91"/>
 <label x="238.76" y="210.82" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="3.3V_SDA" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="S"/>
+<pinref part="SDAMOSFET" gate="G$1" pin="S"/>
 <pinref part="3.3VI2CTERM" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="210.82" x2="190.5" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="2.2K-3" gate="G$1" pin="1"/>
@@ -3651,7 +3651,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </net>
 <net name="3.3V_SCL" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="S"/>
+<pinref part="SCLMOSFET" gate="G$1" pin="S"/>
 <wire x1="218.44" y1="193.04" x2="200.66" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="193.04" x2="200.66" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="3.3VI2CTERM" gate="G$1" pin="1"/>
@@ -3702,11 +3702,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="78.74" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
 <junction x="78.74" y="60.96"/>
 <label x="101.6" y="60.96" size="1.27" layer="95"/>
-<pinref part="U$17" gate="G$1" pin="1"/>
+<pinref part="4.5VTERM" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="60.96" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="60.96"/>
-<pinref part="U$17" gate="G$1" pin="2"/>
+<pinref part="4.5VTERM" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="76.2"/>
 </segment>
@@ -3846,7 +3846,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="2"/>
+<pinref part="6.8U-T" gate="G$1" pin="2"/>
 <pinref part="1" gate="G$1" pin="2"/>
 </segment>
 </net>
