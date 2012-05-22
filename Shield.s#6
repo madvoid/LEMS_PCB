@@ -3919,7 +3919,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="284.48" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="VBAT" class="0">
 <segment>
 <pinref part="BATT" gate="CR1220" pin="+"/>
 <wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>

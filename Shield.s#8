@@ -3630,14 +3630,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="111.76" y="205.74" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$87" class="0">
-<segment>
-<pinref part="BATT" gate="CR1220" pin="+1"/>
-<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
-<wire x1="101.6" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<label x="109.22" y="195.58" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="SQW" class="0">
 <segment>
 <pinref part="DS1307" gate="DS1307" pin="SQW"/>
@@ -3925,6 +3917,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="GND" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="BATT" gate="CR1220" pin="+"/>
+<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
 </segment>
 </net>
 </nets>
