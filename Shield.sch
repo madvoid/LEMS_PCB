@@ -273,7 +273,7 @@ A3 Larger Frame</description>
 </library>
 <library name="LEMS">
 <packages>
-<package name="10PINHEADER">
+<package name="10PH">
 <description>10 Pin Header Lock</description>
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="15.875" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
@@ -360,7 +360,7 @@ A3 Larger Frame</description>
 <rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
 <rectangle x1="22.606" y1="-0.254" x2="23.114" y2="0.254" layer="51"/>
 </package>
-<package name="8PINHEADER">
+<package name="8PH">
 <description>8 Pin Header Lock</description>
 <wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
@@ -430,29 +430,6 @@ A3 Larger Frame</description>
 <rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
 <rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
-</package>
-<package name="2PINHEADER">
-<description>2 Pin Header Lock</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-1.4478" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="1.4478" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.5621" y1="-0.2921" x2="-0.9779" y2="0.2921" layer="51"/>
-<rectangle x1="0.9779" y1="-0.2921" x2="1.5621" y2="0.2921" layer="51"/>
 </package>
 <package name="SCREWTERMINAL-3.5MM-2_LOCK">
 <description>2-Pin Screw Terminal Lock</description>
@@ -1113,7 +1090,20 @@ A3 Larger Frame</description>
 <text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;Value</text>
 </package>
-<package name="3PINHEADER">
+<package name="SWITCH-SPDT">
+<description>SPDT Switch
+Sparkfun COM-00102</description>
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.8796"/>
+<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="3PH">
 <wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
@@ -1143,22 +1133,32 @@ A3 Larger Frame</description>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
-<package name="SWITCH-SPDT">
-<description>SPDT Switch
-Sparkfun COM-00102</description>
-<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
-<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
-<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
-<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.8796"/>
-<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<package name="2PH">
+<description>2 Pin Header Lock</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="-1.4478" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.4478" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.5621" y1="-0.2921" x2="-0.9779" y2="0.2921" layer="51"/>
+<rectangle x1="0.9779" y1="-0.2921" x2="1.5621" y2="0.2921" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="10PINHEADER">
+<symbol name="10PH">
 <wire x1="1.27" y1="-15.24" x2="-5.08" y2="-15.24" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="-7.62" x2="0" y2="-7.62" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="-10.16" x2="0" y2="-10.16" width="0.6096" layer="94"/>
@@ -1186,7 +1186,7 @@ Sparkfun COM-00102</description>
 <pin name="9" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="10" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="8PINHEADER">
+<symbol name="8PH">
 <wire x1="3.81" y1="-12.7" x2="-2.54" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
@@ -1210,7 +1210,7 @@ Sparkfun COM-00102</description>
 <pin name="7" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="8" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="2PINHEADER">
+<symbol name="2PH">
 <wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
@@ -1428,6 +1428,16 @@ Sparkfun COM-00102</description>
 <pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
 </symbol>
+<symbol name="CE">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 <symbol name="ELECTROLYTICCAP">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
@@ -1438,7 +1448,7 @@ Sparkfun COM-00102</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="CERAMICCAP">
+<symbol name="CC">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
@@ -1462,7 +1472,7 @@ Sparkfun COM-00102</description>
 <text x="-2.286" y="-4.572" size="1.778" layer="95">VCC</text>
 <text x="4.572" y="-2.54" size="1.778" layer="95" rot="R90">VOUT</text>
 </symbol>
-<symbol name="3PINHEADER">
+<symbol name="3PH">
 <wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
@@ -1476,7 +1486,7 @@ Sparkfun COM-00102</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="JUMPER2PIN">
+<symbol name="2PJ">
 <wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
@@ -1573,12 +1583,13 @@ Sparkfun COM-00102</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="10PINHEADER">
+<deviceset name="10PH">
+<description>10 Pin Header Lock</description>
 <gates>
-<gate name="G$1" symbol="10PINHEADER" x="0" y="0"/>
+<gate name="G$1" symbol="10PH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="N" package="10PINHEADER">
+<device name="N" package="10PH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -1597,13 +1608,13 @@ Sparkfun COM-00102</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="8PINHEADER">
+<deviceset name="8PH">
 <description>8 Pin Header Lock</description>
 <gates>
-<gate name="G$1" symbol="8PINHEADER" x="0" y="0"/>
+<gate name="G$1" symbol="8PH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="N" package="8PINHEADER">
+<device name="N" package="8PH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1620,13 +1631,13 @@ Sparkfun COM-00102</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2PINHEADER">
+<deviceset name="2PH">
 <description>2 Pin Header</description>
 <gates>
-<gate name="G$1" symbol="2PINHEADER" x="0" y="0"/>
+<gate name="G$1" symbol="2PH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="N" package="2PINHEADER">
+<device name="N" package="2PH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1775,6 +1786,32 @@ Sparkfun COM-00102</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="R">
+<description>Standard Through Hole Resistor - Type 0207 - 10 Mil Spacing</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="N" package="0207/10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="T" package="0207/7">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="RESISTOR">
 <description>Standard Through Hole Resistor - Type 0207 - 10 Mil Spacing</description>
 <gates>
@@ -1802,6 +1839,7 @@ Sparkfun COM-00102</description>
 </devices>
 </deviceset>
 <deviceset name="5V">
+<description>5V Source</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
@@ -1981,6 +2019,32 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
+<deviceset name="CE">
+<description>Generic Electrolytic Capacitor</description>
+<gates>
+<gate name="G$1" symbol="CE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="S" package="E2,5-5">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="E2,5-6">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="ELECTROLYTICCAP">
 <description>Generic Electrolytic Capacitor</description>
 <gates>
@@ -2007,10 +2071,10 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
-<deviceset name="CERAMICCAP">
+<deviceset name="CC">
 <description>Generic Ceramic Capacitor</description>
 <gates>
-<gate name="G$1" symbol="CERAMICCAP" x="0" y="0"/>
+<gate name="G$1" symbol="CC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="L" package="C025-025X050">
@@ -2051,10 +2115,10 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
-<deviceset name="3PINHEADER">
+<deviceset name="3PH">
 <description>3 Pin Header Lock</description>
 <gates>
-<gate name="G$1" symbol="3PINHEADER" x="0" y="0"/>
+<gate name="G$1" symbol="3PH" x="0" y="0"/>
 </gates>
 <devices>
 <device name="S" package="SCREWTERMINAL-3.5MM-3_LOCK.007S">
@@ -2067,7 +2131,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <technology name=""/>
 </technologies>
 </device>
-<device name="N" package="3PINHEADER">
+<device name="N" package="3PH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2079,13 +2143,13 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER2PIN">
+<deviceset name="2PJ">
 <description>2 Pin Jumper</description>
 <gates>
-<gate name="G$1" symbol="JUMPER2PIN" x="0" y="0"/>
+<gate name="G$1" symbol="2PJ" x="0" y="0"/>
 </gates>
 <devices>
-<device name="N" package="2PINHEADER">
+<device name="N" package="2PH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2228,18 +2292,18 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A3" device=""/>
-<part name="8-13" library="LEMS" deviceset="10PINHEADER" device="N"/>
-<part name="0-7" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="14-21" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="23-37" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="39-53" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="22-36" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="38-52" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="A8-A15" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="A0-A7" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="POWER" library="LEMS" deviceset="8PINHEADER" device="N"/>
-<part name="5V" library="LEMS" deviceset="2PINHEADER" device="N"/>
-<part name="GND" library="LEMS" deviceset="2PINHEADER" device="N"/>
+<part name="8-13" library="LEMS" deviceset="10PH" device="N"/>
+<part name="0-7" library="LEMS" deviceset="8PH" device="N"/>
+<part name="14-21" library="LEMS" deviceset="8PH" device="N"/>
+<part name="23-37" library="LEMS" deviceset="8PH" device="N"/>
+<part name="39-53" library="LEMS" deviceset="8PH" device="N"/>
+<part name="22-36" library="LEMS" deviceset="8PH" device="N"/>
+<part name="38-52" library="LEMS" deviceset="8PH" device="N"/>
+<part name="A8-A15" library="LEMS" deviceset="8PH" device="N"/>
+<part name="A0-A7" library="LEMS" deviceset="8PH" device="N"/>
+<part name="POWER" library="LEMS" deviceset="8PH" device="N"/>
+<part name="5V" library="LEMS" deviceset="2PH" device="N"/>
+<part name="GND" library="LEMS" deviceset="2PH" device="N"/>
 <part name="U$1" library="LEMS" deviceset="SDMMC" device="06132"/>
 <part name="SDLVLS" library="LEMS" deviceset="74AHC125" device="N"/>
 <part name="GND1" library="LEMS" deviceset="GND" device=""/>
@@ -2248,32 +2312,32 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="GND4" library="LEMS" deviceset="GND" device=""/>
 <part name="P+1" library="LEMS" deviceset="3.3V" device=""/>
 <part name="GND5" library="LEMS" deviceset="GND" device=""/>
-<part name="10K" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="10K" library="LEMS" deviceset="R" device="T"/>
 <part name="U$3" library="LEMS" deviceset="5V" device=""/>
 <part name="P+2" library="LEMS" deviceset="3.3V" device=""/>
 <part name="P+3" library="LEMS" deviceset="3.3V" device=""/>
 <part name="GND6" library="LEMS" deviceset="GND" device=""/>
-<part name="1K" library="LEMS" deviceset="RESISTOR" device="T"/>
-<part name="1K_2" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="1K" library="LEMS" deviceset="R" device="T"/>
+<part name="1K_2" library="LEMS" deviceset="R" device="T"/>
 <part name="LED1" library="LEMS" deviceset="LED" device="3MM"/>
 <part name="LED2" library="LEMS" deviceset="LED" device="3MM"/>
 <part name="GND7" library="LEMS" deviceset="GND" device=""/>
 <part name="GND8" library="LEMS" deviceset="GND" device=""/>
-<part name="U$2" library="LEMS" deviceset="2PINHEADER" device="N"/>
+<part name="U$2" library="LEMS" deviceset="2PH" device="N"/>
 <part name="DS1307" library="LEMS" deviceset="DS1307" device="P"/>
 <part name="Y1" library="LEMS" deviceset="CRYSTAL" device="TC38H"/>
 <part name="BATT" library="LEMS" deviceset="CR1220" device="THM"/>
 <part name="GND9" library="LEMS" deviceset="GND" device=""/>
 <part name="U$5" library="LEMS" deviceset="5V" device=""/>
-<part name="5VI2CTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="2.2K" library="LEMS" deviceset="RESISTOR" device="T"/>
-<part name="2.2K-2" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="5VI2CTERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="2.2K" library="LEMS" deviceset="R" device="T"/>
+<part name="2.2K-2" library="LEMS" deviceset="R" device="T"/>
 <part name="U$6" library="LEMS" deviceset="5V" device=""/>
 <part name="SDAMOSFET" library="LEMS" deviceset="MOSFETN" device="N"/>
 <part name="SCLMOSFET" library="LEMS" deviceset="MOSFETN" device="N"/>
-<part name="3.3VI2CTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="2.2K-3" library="LEMS" deviceset="RESISTOR" device="T"/>
-<part name="2.2K-4" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="3.3VI2CTERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="2.2K-3" library="LEMS" deviceset="R" device="T"/>
+<part name="2.2K-4" library="LEMS" deviceset="R" device="T"/>
 <part name="P+4" library="LEMS" deviceset="3.3V" device=""/>
 <part name="P+5" library="LEMS" deviceset="3.3V" device=""/>
 <part name="P+6" library="LEMS" deviceset="3.3V" device=""/>
@@ -2282,57 +2346,57 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="U$8" library="LEMS" deviceset="5V" device=""/>
 <part name="GND11" library="LEMS" deviceset="GND" device=""/>
 <part name="100UF" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
-<part name="0.1UF" library="LEMS" deviceset="CERAMICCAP" device="L"/>
+<part name="0.1UF" library="LEMS" deviceset="CC" device="L"/>
 <part name="U$9" library="LEMS" deviceset="MCP1700-330" device="T"/>
 <part name="U$10" library="LEMS" deviceset="5V" device=""/>
 <part name="GND12" library="LEMS" deviceset="GND" device=""/>
-<part name="100UF-2" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
-<part name="0.1UF-2" library="LEMS" deviceset="CERAMICCAP" device="L"/>
+<part name="100UF-2" library="LEMS" deviceset="CE" device="S"/>
+<part name="0.1UF-2" library="LEMS" deviceset="CC" device="L"/>
 <part name="P+7" library="LEMS" deviceset="3.3V" device=""/>
-<part name="SPITERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
-<part name="REDJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
-<part name="GREENJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
-<part name="TN9TERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
-<part name="USARTTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="USART1TERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="USART2TERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="USART3TERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="SPITERM" library="LEMS" deviceset="3PH" device="S"/>
+<part name="REDJUMPER" library="LEMS" deviceset="2PJ" device="N"/>
+<part name="GREENJUMPER" library="LEMS" deviceset="2PJ" device="N"/>
+<part name="TN9TERM" library="LEMS" deviceset="3PH" device="S"/>
+<part name="USARTTERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="USART1TERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="USART2TERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="USART3TERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="U$11" library="LEMS" deviceset="REF5045" device="S"/>
-<part name="1UF" library="LEMS" deviceset="CERAMICCAP" device="L"/>
+<part name="1UF" library="LEMS" deviceset="CC" device="L"/>
 <part name="GND13" library="LEMS" deviceset="GND" device=""/>
-<part name="10UF" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
-<part name="10UF-LOWESR" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
+<part name="10UF" library="LEMS" deviceset="CE" device="S"/>
+<part name="10UF-LOWESR" library="LEMS" deviceset="CE" device="S"/>
 <part name="GND14" library="LEMS" deviceset="GND" device=""/>
-<part name="AREFJUMPER" library="LEMS" deviceset="JUMPER2PIN" device="N"/>
+<part name="AREFJUMPER" library="LEMS" deviceset="2PJ" device="N"/>
 <part name="U$12" library="LEMS" deviceset="ADS7841" device="P"/>
 <part name="U$13" library="LEMS" deviceset="5V" device=""/>
-<part name="0.1UF-3" library="LEMS" deviceset="CERAMICCAP" device="L"/>
-<part name="10UF-2" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
+<part name="0.1UF-3" library="LEMS" deviceset="CC" device="L"/>
+<part name="10UF-2" library="LEMS" deviceset="CE" device="S"/>
 <part name="GND15" library="LEMS" deviceset="GND" device=""/>
 <part name="U$14" library="LEMS" deviceset="TLV2372" device="P"/>
 <part name="U$15" library="LEMS" deviceset="5V" device=""/>
 <part name="GND16" library="LEMS" deviceset="GND" device=""/>
-<part name="6.8UF" library="LEMS" deviceset="ELECTROLYTICCAP" device="S"/>
-<part name="OPA1TERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="6.8UF" library="LEMS" deviceset="CE" device="S"/>
+<part name="OPA1TERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="44.2K" library="LEMS" deviceset="RESISTOR" device="T"/>
-<part name="1UF-2" library="LEMS" deviceset="CERAMICCAP" device="L"/>
-<part name="0.1UF-4" library="LEMS" deviceset="CERAMICCAP" device="L"/>
-<part name="OPA2TERM" library="LEMS" deviceset="3PINHEADER" device="N"/>
-<part name="DALLASTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
+<part name="1UF-2" library="LEMS" deviceset="CC" device="L"/>
+<part name="0.1UF-4" library="LEMS" deviceset="CC" device="L"/>
+<part name="OPA2TERM" library="LEMS" deviceset="3PH" device="N"/>
+<part name="DALLASTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="4.7K" library="LEMS" deviceset="RESISTOR" device="T"/>
 <part name="GND17" library="LEMS" deviceset="GND" device=""/>
-<part name="4.5VTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
-<part name="ADCTERM" library="LEMS" deviceset="3PINHEADER" device="S"/>
+<part name="4.5VTERM" library="LEMS" deviceset="2PH" device="S"/>
+<part name="ADCTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="U$18" library="LEMS" deviceset="TPS7250" device="D"/>
-<part name="250K" library="LEMS" deviceset="RESISTOR" device="N"/>
-<part name="0.1UF-5" library="LEMS" deviceset="CERAMICCAP" device="L"/>
+<part name="250K" library="LEMS" deviceset="R" device="N"/>
+<part name="0.1UF-5" library="LEMS" deviceset="CC" device="L"/>
 <part name="GND18" library="LEMS" deviceset="GND" device=""/>
 <part name="GND19" library="LEMS" deviceset="GND" device=""/>
-<part name="6.8U-T" library="LEMS" deviceset="ELECTROLYTICCAP" device="L"/>
-<part name="1" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="6.8U-T" library="LEMS" deviceset="CE" device="S"/>
+<part name="1" library="LEMS" deviceset="R" device="T"/>
 <part name="GND20" library="LEMS" deviceset="GND" device=""/>
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
-<part name="PWRTERM" library="LEMS" deviceset="2PINHEADER" device="S"/>
+<part name="PWRTERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="GND21" library="LEMS" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -3566,19 +3630,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="111.76" y="205.74" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$87" class="0">
-<segment>
-<pinref part="BATT" gate="CR1220" pin="+1"/>
-<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
-<wire x1="101.6" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="BATT" gate="CR1220" pin="+"/>
-<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<junction x="106.68" y="198.12"/>
-<label x="109.22" y="195.58" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="SQW" class="0">
 <segment>
 <pinref part="DS1307" gate="DS1307" pin="SQW"/>
@@ -3866,6 +3917,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="GND" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
+<pinref part="BATT" gate="CR1220" pin="+"/>
+<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
