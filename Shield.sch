@@ -3256,14 +3256,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="276.86" y="121.92" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPITERM" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
-<label x="335.28" y="121.92" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$12" gate="ADS7841" pin="DIN"/>
 <wire x1="177.8" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <label x="200.66" y="78.74" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="SPITERM" gate="G$1" pin="3"/>
+<wire x1="327.66" y1="124.46" x2="337.82" y2="124.46" width="0.1524" layer="91"/>
+<label x="335.28" y="124.46" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="SS" class="0">
@@ -3383,14 +3383,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="246.38" y="121.92" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPITERM" gate="G$1" pin="3"/>
-<wire x1="327.66" y1="124.46" x2="337.82" y2="124.46" width="0.1524" layer="91"/>
-<label x="335.28" y="124.46" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$12" gate="ADS7841" pin="DOUT"/>
 <wire x1="177.8" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="200.66" y="68.58" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="SPITERM" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
+<label x="335.28" y="119.38" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -3400,14 +3400,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="246.38" y="119.38" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPITERM" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
-<label x="335.28" y="119.38" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$12" gate="ADS7841" pin="DCLK"/>
 <wire x1="177.8" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="200.66" y="88.9" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="SPITERM" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
+<label x="335.28" y="121.92" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="A15" class="0">
@@ -3792,34 +3792,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="208.28" y="127" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CH1" class="0">
-<segment>
-<pinref part="U$12" gate="ADS7841" pin="CH1"/>
-<wire x1="152.4" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
-<label x="124.46" y="78.74" size="1.27" layer="95"/>
-<pinref part="ADCTERM" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="CH2" class="0">
-<segment>
-<pinref part="U$12" gate="ADS7841" pin="CH2"/>
-<wire x1="152.4" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
-<label x="124.46" y="73.66" size="1.27" layer="95"/>
-<wire x1="121.92" y1="73.66" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="ADCTERM" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CH3" class="0">
-<segment>
-<pinref part="U$12" gate="ADS7841" pin="CH3"/>
-<wire x1="152.4" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<label x="124.46" y="68.58" size="1.27" layer="95"/>
-<wire x1="119.38" y1="68.58" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="ADCTERM" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="BUSY" class="0">
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="BUSY"/>
@@ -3926,6 +3898,33 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CH1" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH1"/>
+<wire x1="152.4" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="78.74" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="ADCTERM" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CH2" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH2"/>
+<wire x1="152.4" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="73.66" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="ADCTERM" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CH3" class="0">
+<segment>
+<pinref part="U$12" gate="ADS7841" pin="CH3"/>
+<wire x1="152.4" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="68.58" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="ADCTERM" gate="G$1" pin="3"/>
+<wire x1="119.38" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

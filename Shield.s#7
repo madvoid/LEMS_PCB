@@ -2473,7 +2473,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="P+7" gate="G$1" x="30.48" y="111.76" rot="R270"/>
 <instance part="SPITERM" gate="G$1" x="322.58" y="121.92"/>
 <instance part="REDJUMPER" gate="G$1" x="55.88" y="226.06"/>
-<instance part="GREENJUMPER" gate="G$1" x="58.42" y="218.44" rot="MR0"/>
+<instance part="GREENJUMPER" gate="G$1" x="58.42" y="218.44" rot="R180"/>
 <instance part="TN9TERM" gate="G$1" x="287.02" y="228.6" rot="R90"/>
 <instance part="USARTTERM" gate="G$1" x="307.34" y="228.6" rot="R90"/>
 <instance part="USART1TERM" gate="G$1" x="327.66" y="228.6" rot="R90"/>
@@ -3589,7 +3589,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <net name="GREENLED2" class="0">
 <segment>
 <pinref part="1K_2" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="215.9" x2="45.72" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="220.98" x2="45.72" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="220.98" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
 <label x="35.56" y="218.44" size="1.27" layer="95"/>
 <pinref part="GREENJUMPER" gate="G$1" pin="2"/>
@@ -3628,19 +3628,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="DS1307" gate="DS1307" pin="X2"/>
 <wire x1="109.22" y1="203.2" x2="119.38" y2="203.2" width="0.1524" layer="91"/>
 <label x="111.76" y="205.74" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$87" class="0">
-<segment>
-<pinref part="BATT" gate="CR1220" pin="+1"/>
-<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
-<wire x1="101.6" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="BATT" gate="CR1220" pin="+"/>
-<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<junction x="106.68" y="198.12"/>
-<label x="109.22" y="195.58" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="SQW" class="0">
@@ -3741,7 +3728,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <net name="GREENLED" class="0">
 <segment>
 <pinref part="GREENJUMPER" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="215.9" x2="68.58" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="220.98" x2="68.58" y2="220.98" width="0.1524" layer="91"/>
 <label x="68.58" y="220.98" size="1.27" layer="95"/>
 </segment>
 <segment>
@@ -3930,6 +3917,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="GND" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="BATT" gate="CR1220" pin="+"/>
+<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="DS1307" gate="DS1307" pin="VBAT"/>
 </segment>
 </net>
 </nets>
