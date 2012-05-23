@@ -2685,15 +2685,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="340.36" y="144.78" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="OPA1TERM" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="127" x2="167.64" y2="127" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="127" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="TLV2372-1" pin="+IN"/>
 <wire x1="167.64" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="177.8" y="121.92" size="1.27" layer="95"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="175.26" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
 <junction x="175.26" y="124.46"/>
+<wire x1="167.64" y1="124.46" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="OPA1TERM" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="129.54" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="0.1UF-5" gate="G$1" pin="2"/>
@@ -3801,12 +3801,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </net>
 <net name="LIOP-" class="0">
 <segment>
-<pinref part="OPA1TERM" gate="G$1" pin="2"/>
 <pinref part="U$14" gate="TLV2372-1" pin="-IN"/>
-<wire x1="165.1" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="129.54" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
-<junction x="175.26" y="129.54"/>
 <pinref part="1UF-2" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="137.16" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
@@ -3814,6 +3811,12 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="182.88" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
 <junction x="175.26" y="137.16"/>
 <label x="170.18" y="144.78" size="1.27" layer="95"/>
+<wire x1="175.26" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="129.54" x2="170.18" y2="127" width="0.1524" layer="91"/>
+<junction x="175.26" y="129.54"/>
+<pinref part="OPA1TERM" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
+<label x="177.8" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">

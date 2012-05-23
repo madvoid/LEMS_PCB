@@ -2489,7 +2489,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="U$12" gate="ADS7841" x="165.1" y="71.12"/>
 <instance part="U$13" gate="G$1" x="137.16" y="88.9"/>
 <instance part="0.1UF-3" gate="G$1" x="139.7" y="104.14"/>
-<instance part="10UF-2" gate="G$1" x="149.86" y="104.14"/>
+<instance part="10UF-2" gate="G$1" x="149.86" y="104.14" rot="R180"/>
 <instance part="GND15" gate="1" x="144.78" y="116.84" rot="R180"/>
 <instance part="U$14" gate="TLV2372-1" x="190.5" y="127"/>
 <instance part="U$14" gate="TLV2372-2" x="226.06" y="104.14"/>
@@ -2645,12 +2645,12 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <segment>
 <pinref part="0.1UF-3" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="106.68" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="10UF-2" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="114.3" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <junction x="144.78" y="114.3"/>
+<pinref part="10UF-2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="109.22" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="COM"/>
@@ -2900,21 +2900,21 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="VCC"/>
-<wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="5V"/>
 <pinref part="0.1UF-3" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="88.9" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <junction x="139.7" y="88.9"/>
-<pinref part="10UF-2" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="88.9" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
-<junction x="149.86" y="88.9"/>
 <pinref part="U$12" gate="ADS7841" pin="/SHDN"/>
 <wire x1="152.4" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="58.42" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="144.78" y="88.9"/>
+<pinref part="10UF-2" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="101.6" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<junction x="149.86" y="88.9"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="VCC@2"/>
@@ -3388,9 +3388,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="200.66" y="68.58" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPITERM" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
-<label x="335.28" y="121.92" size="1.27" layer="95"/>
+<pinref part="SPITERM" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
+<label x="335.28" y="119.38" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -3400,14 +3400,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="246.38" y="119.38" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPITERM" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
-<label x="335.28" y="119.38" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$12" gate="ADS7841" pin="DCLK"/>
 <wire x1="177.8" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="200.66" y="88.9" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="SPITERM" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
+<label x="335.28" y="121.92" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="A15" class="0">
