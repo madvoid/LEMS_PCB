@@ -2367,7 +2367,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="10UF" library="LEMS" deviceset="CE" device="S"/>
 <part name="10UF-LOWESR" library="LEMS" deviceset="CE" device="S"/>
 <part name="GND14" library="LEMS" deviceset="GND" device=""/>
-<part name="AREFJUMPER" library="LEMS" deviceset="2PJ" device="N"/>
 <part name="U$12" library="LEMS" deviceset="ADS7841" device="P"/>
 <part name="U$13" library="LEMS" deviceset="5V" device=""/>
 <part name="0.1UF-3" library="LEMS" deviceset="CC" device="L"/>
@@ -2398,6 +2397,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
 <part name="PWRTERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="GND21" library="LEMS" deviceset="GND" device=""/>
+<part name="U$4" library="LEMS" deviceset="2PH" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -2485,7 +2485,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="10UF" gate="G$1" x="27.94" y="63.5"/>
 <instance part="10UF-LOWESR" gate="G$1" x="78.74" y="58.42"/>
 <instance part="GND14" gate="1" x="78.74" y="50.8"/>
-<instance part="AREFJUMPER" gate="G$1" x="27.94" y="20.32"/>
 <instance part="U$12" gate="ADS7841" x="165.1" y="71.12"/>
 <instance part="U$13" gate="G$1" x="137.16" y="88.9"/>
 <instance part="0.1UF-3" gate="G$1" x="139.7" y="104.14"/>
@@ -2518,6 +2517,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="PWRSWTCH" gate="G$1" x="302.26" y="40.64"/>
 <instance part="PWRTERM" gate="G$1" x="325.12" y="43.18"/>
 <instance part="GND21" gate="1" x="337.82" y="38.1"/>
+<instance part="U$4" gate="G$1" x="27.94" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2983,11 +2983,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="81.28" y1="243.84" x2="81.28" y2="233.68" width="0.1524" layer="91"/>
 <label x="81.28" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
-<segment>
-<pinref part="AREFJUMPER" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
-<label x="43.18" y="17.78" size="1.27" layer="95"/>
-</segment>
 </net>
 <net name="D7" class="0">
 <segment>
@@ -3204,15 +3199,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="294.64" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="276.86" y="137.16" size="1.27" layer="95"/>
 </segment>
-<segment>
-<pinref part="DALLASTERM" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="147.32" x2="337.82" y2="147.32" width="0.1524" layer="91"/>
-<label x="332.74" y="147.32" size="1.27" layer="95"/>
-<pinref part="4.7K" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="147.32" x2="340.36" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="147.32" x2="337.82" y2="160.02" width="0.1524" layer="91"/>
-<junction x="337.82" y="147.32"/>
-</segment>
 </net>
 <net name="D41" class="0">
 <segment>
@@ -3339,6 +3325,15 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="38-52" gate="G$1" pin="1"/>
 <wire x1="264.16" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="91"/>
 <label x="246.38" y="137.16" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="DALLASTERM" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="147.32" x2="337.82" y2="147.32" width="0.1524" layer="91"/>
+<label x="332.74" y="147.32" size="1.27" layer="95"/>
+<pinref part="4.7K" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="147.32" x2="340.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="147.32" x2="337.82" y2="160.02" width="0.1524" layer="91"/>
+<junction x="337.82" y="147.32"/>
 </segment>
 </net>
 <net name="D40" class="0">
@@ -3762,9 +3757,12 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="88.9" y="76.2"/>
 </segment>
 <segment>
-<pinref part="AREFJUMPER" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="17.78" size="1.27" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="17.78"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="VREF"/>
