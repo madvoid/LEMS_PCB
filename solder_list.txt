@@ -1,0 +1,16 @@
+1. REF5045 (Use Heatsink if Possible)
+2. SD Card Holder
+3. Level Shifter
+4. Op-Amp Support
+5. Op-Amp (Use DIP Socket!)
+6. Battery Holder
+7. DS1307 and Crystal
+8. I2C Support
+9. ADC (Use DIP Socket?)
+10. ADC/REF5045 Support
+11. 3.3V Ref and Power Capacitors
+12. Reset Button
+13. Power Regulator/Switch
+14. Stackable Headers
+15. LED's and Support
+16. Screw Terminals

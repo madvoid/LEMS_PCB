@@ -2983,11 +2983,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="81.28" y1="243.84" x2="81.28" y2="233.68" width="0.1524" layer="91"/>
 <label x="81.28" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
-<segment>
-<pinref part="AREFJUMPER" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
-<label x="43.18" y="17.78" size="1.27" layer="95"/>
-</segment>
 </net>
 <net name="D7" class="0">
 <segment>

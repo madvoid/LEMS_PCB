@@ -2488,7 +2488,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="U$12" gate="ADS7841" x="165.1" y="71.12"/>
 <instance part="U$13" gate="G$1" x="137.16" y="88.9"/>
 <instance part="0.1UF-3" gate="G$1" x="139.7" y="104.14"/>
-<instance part="10UF-2" gate="G$1" x="149.86" y="104.14" rot="R180"/>
+<instance part="10UF-2" gate="G$1" x="149.86" y="101.6" rot="R180"/>
 <instance part="GND15" gate="1" x="144.78" y="116.84" rot="R180"/>
 <instance part="U$14" gate="TLV2372-1" x="190.5" y="127"/>
 <instance part="U$14" gate="TLV2372-2" x="226.06" y="104.14"/>
@@ -2650,7 +2650,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="GND15" gate="1" pin="GND"/>
 <junction x="144.78" y="114.3"/>
 <pinref part="10UF-2" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="109.22" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="106.68" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="COM"/>
@@ -2913,7 +2913,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="144.78" y1="58.42" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="144.78" y="88.9"/>
 <pinref part="10UF-2" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="101.6" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="99.06" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <junction x="149.86" y="88.9"/>
 </segment>
 <segment>
