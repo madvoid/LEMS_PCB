@@ -2505,6 +2505,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="GNDTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="3.3VTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="BMP085TERM" library="LEMS" deviceset="6PH" device="N"/>
+<part name="OPAMPEXTRA1" library="LEMS" deviceset="3PH" device="N"/>
+<part name="OPAMPEXTRA2" library="LEMS" deviceset="3PH" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -2631,6 +2633,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="GNDTERM" gate="G$1" x="215.9" y="12.7" rot="R90"/>
 <instance part="3.3VTERM" gate="G$1" x="233.68" y="12.7" rot="R90"/>
 <instance part="BMP085TERM" gate="G$1" x="223.52" y="248.92" rot="R270"/>
+<instance part="OPAMPEXTRA1" gate="G$1" x="373.38" y="93.98" rot="R180"/>
+<instance part="OPAMPEXTRA2" gate="G$1" x="373.38" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2976,17 +2980,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="0.1UF-2" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="119.38" x2="22.86" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="3.3VTERM" gate="G$1" pin="3"/>
-<wire x1="231.14" y1="17.78" x2="231.14" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="3.3VTERM" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="17.78" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
-<junction x="231.14" y="17.78"/>
-<pinref part="3.3VTERM" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="17.78" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
-<junction x="233.68" y="17.78"/>
-<label x="231.14" y="25.4" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="BMP085TERM" gate="G$1" pin="6"/>
@@ -3683,6 +3676,17 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="POWER" gate="G$1" pin="4"/>
 <wire x1="86.36" y1="15.24" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <label x="86.36" y="25.4" size="1.27" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="3.3VTERM" gate="G$1" pin="3"/>
+<wire x1="231.14" y1="17.78" x2="231.14" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="3.3VTERM" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="17.78" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
+<junction x="231.14" y="17.78"/>
+<pinref part="3.3VTERM" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="17.78" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
+<junction x="233.68" y="17.78"/>
+<label x="231.14" y="25.4" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">

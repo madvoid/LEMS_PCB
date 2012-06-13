@@ -2397,7 +2397,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
 <part name="PWRTERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="GND21" library="LEMS" deviceset="GND" device=""/>
-<part name="U$4" library="LEMS" deviceset="2PH" device="N"/>
+<part name="5V_JUMP" library="LEMS" deviceset="2PJ" device="N"/>
+<part name="TN9POWER" library="LEMS" deviceset="2PH" device="S"/>
+<part name="4.5VJUMP" library="LEMS" deviceset="2PJ" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -2517,7 +2519,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="PWRSWTCH" gate="G$1" x="302.26" y="40.64"/>
 <instance part="PWRTERM" gate="G$1" x="325.12" y="43.18"/>
 <instance part="GND21" gate="1" x="337.82" y="38.1"/>
-<instance part="U$4" gate="G$1" x="27.94" y="12.7" rot="R90"/>
+<instance part="5V_JUMP" gate="G$1" x="274.32" y="60.96"/>
+<instance part="TN9POWER" gate="G$1" x="43.18" y="12.7" rot="R90"/>
+<instance part="4.5VJUMP" gate="G$1" x="17.78" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -2714,6 +2718,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="PWRTERM" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="40.64" x2="337.82" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TN9POWER" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="17.78" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
+<label x="45.72" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="MOSI_SOFT" class="0">
@@ -2941,26 +2950,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="350.52" y1="149.86" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$18" gate="G$1" pin="SENSE"/>
-<wire x1="236.22" y1="53.34" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="60.96" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$18" gate="G$1" pin="OUT2"/>
-<wire x1="261.62" y1="60.96" x2="261.62" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="250K" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="58.42" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="58.42" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="63.5" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="63.5" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
-<junction x="261.62" y="60.96"/>
-<pinref part="U$18" gate="G$1" pin="OUT1"/>
-<wire x1="261.62" y1="48.26" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
-<junction x="261.62" y="53.34"/>
-<pinref part="6.8UF-T" gate="G$1" pin="1"/>
-<wire x1="261.62" y1="71.12" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
-<junction x="261.62" y="63.5"/>
-<wire x1="261.62" y1="58.42" x2="284.48" y2="58.42" width="0.1524" layer="91"/>
-<junction x="261.62" y="58.42"/>
-<label x="284.48" y="58.42" size="1.27" layer="95"/>
+<pinref part="5V_JUMP" gate="G$1" pin="2"/>
+<wire x1="276.86" y1="58.42" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="287.02" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TN9POWER" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<label x="43.18" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="I2C-2" class="0">
@@ -2982,6 +2979,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="8-13" gate="G$1" pin="3"/>
 <wire x1="81.28" y1="243.84" x2="81.28" y2="233.68" width="0.1524" layer="91"/>
 <label x="81.28" y="231.14" size="1.27" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="4.5VJUMP" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
+<label x="27.94" y="10.16" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -3757,17 +3759,14 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="88.9" y="76.2"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<label x="12.7" y="17.78" size="1.27" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<junction x="27.94" y="17.78"/>
-</segment>
-<segment>
 <pinref part="U$12" gate="ADS7841" pin="VREF"/>
 <wire x1="152.4" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
 <label x="124.46" y="53.34" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="4.5VJUMP" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
+<label x="5.08" y="10.16" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CH0" class="0">
@@ -3926,6 +3925,31 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="119.38" y1="68.58" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="ADCTERM" gate="G$1" pin="3"/>
 <wire x1="119.38" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5VOUT" class="0">
+<segment>
+<pinref part="U$18" gate="G$1" pin="SENSE"/>
+<wire x1="236.22" y1="53.34" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="60.96" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="OUT2"/>
+<pinref part="250K" gate="G$1" pin="2"/>
+<wire x1="261.62" y1="60.96" x2="261.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="58.42" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="58.42" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="63.5" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="63.5" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
+<junction x="261.62" y="60.96"/>
+<pinref part="U$18" gate="G$1" pin="OUT1"/>
+<wire x1="261.62" y1="48.26" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
+<junction x="261.62" y="53.34"/>
+<pinref part="6.8UF-T" gate="G$1" pin="1"/>
+<wire x1="261.62" y1="71.12" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
+<junction x="261.62" y="63.5"/>
+<pinref part="5V_JUMP" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="58.42" x2="261.62" y2="58.42" width="0.1524" layer="91"/>
+<junction x="261.62" y="58.42"/>
+<label x="264.16" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

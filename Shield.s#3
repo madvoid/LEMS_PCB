@@ -2505,6 +2505,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="GNDTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="3.3VTERM" library="LEMS" deviceset="3PH" device="S"/>
 <part name="BMP085TERM" library="LEMS" deviceset="6PH" device="N"/>
+<part name="OPAMPEXTRA1" library="LEMS" deviceset="3PH" device="N"/>
+<part name="OPAMPEXTRA2" library="LEMS" deviceset="3PH" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -2631,6 +2633,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="GNDTERM" gate="G$1" x="215.9" y="12.7" rot="R90"/>
 <instance part="3.3VTERM" gate="G$1" x="233.68" y="12.7" rot="R90"/>
 <instance part="BMP085TERM" gate="G$1" x="223.52" y="248.92" rot="R270"/>
+<instance part="OPAMPEXTRA1" gate="G$1" x="373.38" y="93.98" rot="R180"/>
+<instance part="OPAMPEXTRA2" gate="G$1" x="373.38" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2844,6 +2848,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="215.9" y="17.78"/>
 <label x="213.36" y="25.4" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="BMP085TERM" gate="G$1" pin="5"/>
+<wire x1="226.06" y1="243.84" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<label x="226.06" y="231.14" size="1.27" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="MOSI_SOFT" class="0">
 <segment>
@@ -2982,6 +2991,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="233.68" y1="17.78" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
 <junction x="233.68" y="17.78"/>
 <label x="231.14" y="25.4" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="BMP085TERM" gate="G$1" pin="6"/>
+<wire x1="228.6" y1="243.84" x2="228.6" y2="233.68" width="0.1524" layer="91"/>
+<label x="228.6" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -3838,6 +3852,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="190.5" y="210.82"/>
 <label x="180.34" y="210.82" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="BMP085TERM" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="243.84" x2="215.9" y2="233.68" width="0.1524" layer="91"/>
+<label x="215.9" y="228.6" size="1.27" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="3.3V_SCL" class="0">
 <segment>
@@ -3850,6 +3869,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="198.12" y1="208.28" x2="180.34" y2="208.28" width="0.1524" layer="91"/>
 <junction x="198.12" y="208.28"/>
 <label x="200.66" y="195.58" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="BMP085TERM" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="243.84" x2="218.44" y2="233.68" width="0.1524" layer="91"/>
+<label x="218.44" y="228.6" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="REDLED" class="0">
@@ -4094,40 +4118,18 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="264.16" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="BMP085TERM" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="243.84" x2="215.9" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="BMP085TERM" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="243.84" x2="218.44" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
+<net name="XCLR" class="0">
 <segment>
 <pinref part="BMP085TERM" gate="G$1" pin="3"/>
 <wire x1="220.98" y1="243.84" x2="220.98" y2="233.68" width="0.1524" layer="91"/>
+<label x="220.98" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="EOC" class="0">
 <segment>
 <pinref part="BMP085TERM" gate="G$1" pin="4"/>
 <wire x1="223.52" y1="243.84" x2="223.52" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="BMP085TERM" gate="G$1" pin="5"/>
-<wire x1="226.06" y1="243.84" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="BMP085TERM" gate="G$1" pin="6"/>
-<wire x1="228.6" y1="243.84" x2="228.6" y2="233.68" width="0.1524" layer="91"/>
+<label x="223.52" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
