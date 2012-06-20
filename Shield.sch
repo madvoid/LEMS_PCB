@@ -2709,11 +2709,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="TN9POWTERM" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="17.78" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
-<label x="45.72" y="25.4" size="1.27" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="GNDTERM" gate="G$1" pin="3"/>
 <wire x1="213.36" y1="17.78" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GNDTERM" gate="G$1" pin="2"/>
@@ -2728,6 +2723,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="BMP085TERM" gate="G$1" pin="5"/>
 <wire x1="226.06" y1="243.84" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
 <label x="226.06" y="231.14" size="1.27" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="TN9POWTERM" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<label x="43.18" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="MOSI_SOFT" class="0">
@@ -2965,11 +2965,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="287.02" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TN9POWTERM" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="17.78" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
-<label x="43.18" y="25.4" size="1.27" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="5VTERM" gate="G$1" pin="3"/>
 <wire x1="195.58" y1="17.78" x2="195.58" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="5VTERM" gate="G$1" pin="2"/>
@@ -2979,6 +2974,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="200.66" y1="17.78" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
 <junction x="198.12" y="17.78"/>
 <label x="195.58" y="25.4" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="TN9POWTERM" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="17.78" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
+<label x="45.72" y="25.4" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="I2C-2" class="0">
@@ -3920,11 +3920,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <net name="VBAT" class="0">
 <segment>
 <pinref part="DS1307" gate="DS1307" pin="VBAT"/>
-<pinref part="BATT" gate="CR1220" pin="+"/>
-<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <label x="109.22" y="195.58" size="1.778" layer="95"/>
+<pinref part="BATT" gate="CR1220" pin="+1"/>
 </segment>
 </net>
 <net name="CH1" class="0">

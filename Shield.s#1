@@ -2396,7 +2396,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="BMP085TERM" library="LEMS" deviceset="6PH" device="N"/>
 <part name="OPAMPEXTRA1" library="LEMS" deviceset="3PH" device="N"/>
 <part name="OPAMPEXTRA2" library="LEMS" deviceset="3PH" device="N"/>
-<part name="U$4" library="LEMS" deviceset="2PH" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -2522,7 +2521,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="BMP085TERM" gate="G$1" x="223.52" y="248.92" rot="R270"/>
 <instance part="OPAMPEXTRA1" gate="G$1" x="373.38" y="93.98" rot="R180"/>
 <instance part="OPAMPEXTRA2" gate="G$1" x="373.38" y="76.2" rot="R180"/>
-<instance part="U$4" gate="G$1" x="101.6" y="50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3788,11 +3786,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="4.5VTERM" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="76.2"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="60.96" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<junction x="101.6" y="55.88"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="ADS7841" pin="VREF"/>
@@ -3927,11 +3920,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <net name="VBAT" class="0">
 <segment>
 <pinref part="DS1307" gate="DS1307" pin="VBAT"/>
-<pinref part="BATT" gate="CR1220" pin="+"/>
-<wire x1="106.68" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="203.2" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="203.2" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <label x="109.22" y="195.58" size="1.778" layer="95"/>
+<pinref part="BATT" gate="CR1220" pin="+1"/>
 </segment>
 </net>
 <net name="CH1" class="0">
