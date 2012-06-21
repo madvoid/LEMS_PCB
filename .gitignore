@@ -7,4 +7,5 @@ Thumbs.db
 
 # Eagle backups are currently disabled #
 ####################################### 
-
+*.s#*
+*.b#*
