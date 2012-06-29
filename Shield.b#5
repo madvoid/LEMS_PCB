@@ -258,6 +258,10 @@
 <text x="94.996" y="68.58" size="1.016" layer="21" rot="SR90">3.3</text>
 <text x="87.884" y="68.58" size="1.016" layer="21" rot="R90">5V</text>
 <text x="1.016" y="3.556" size="1.016" layer="21">MechE</text>
+<text x="57.404" y="52.07" size="1.016" layer="21" rot="SR180">2</text>
+<text x="53.848" y="52.07" size="1.016" layer="21" rot="SR180">6</text>
+<text x="50.292" y="52.07" size="1.016" layer="21" rot="SR180">7</text>
+<text x="64.008" y="52.07" size="1.016" layer="21" rot="SR180">GND</text>
 </plain>
 <libraries>
 <library name="LEMS">

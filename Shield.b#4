@@ -262,6 +262,15 @@
 <text x="53.848" y="52.07" size="1.016" layer="21" rot="SR180">6</text>
 <text x="50.292" y="52.07" size="1.016" layer="21" rot="SR180">7</text>
 <text x="64.008" y="52.07" size="1.016" layer="21" rot="SR180">GND</text>
+<polygon width="0.3048" layer="21">
+<vertex x="36.83" y="29.21"/>
+<vertex x="52.578" y="29.21"/>
+<vertex x="55.88" y="32.512"/>
+<vertex x="55.88" y="42.672"/>
+<vertex x="43.18" y="42.672"/>
+<vertex x="43.18" y="36.83"/>
+<vertex x="36.83" y="36.83"/>
+</polygon>
 </plain>
 <libraries>
 <library name="LEMS">

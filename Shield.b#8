@@ -1222,6 +1222,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="U$4" library="LEMS" package="SCREWTERMINAL-3.5MM-2_LOCK" value="2PHS" x="6.35" y="19.05" rot="R270"/>
 <element name="SCHOTTKY" library="adafruit" package="DO41-10" value="" x="8.89" y="11.43" rot="R180"/>
 <element name="ZENER" library="LEMS" package="DO41-10" value="1N4004" x="8.89" y="23.114" rot="R180"/>
+<element name="U$7" library="LEMS" package="SCREWTERMINAL-3.5MM-3_LOCK.007S" value="3PHS" x="3.81" y="-3.81"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1658,9 +1659,13 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 </signal>
 <signal name="D7">
 <contactref element="0-7" pad="1"/>
+<contactref element="U$7" pad="3"/>
+<wire x1="10.9878" y1="-3.81" x2="45.72" y2="59.817" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D6">
 <contactref element="0-7" pad="2"/>
+<contactref element="U$7" pad="2"/>
+<wire x1="7.31" y1="-3.81" x2="48.26" y2="59.563" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TN9_ACT">
 <contactref element="0-7" pad="4"/>
@@ -2353,6 +2358,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 </signal>
 <signal name="D2">
 <contactref element="0-7" pad="6"/>
+<contactref element="U$7" pad="1"/>
+<wire x1="3.6322" y1="-3.81" x2="58.42" y2="59.563" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
