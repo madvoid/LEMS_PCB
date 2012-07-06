@@ -2906,7 +2906,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <part name="0.1UF-5" library="LEMS" deviceset="CC" device="L"/>
 <part name="GND18" library="LEMS" deviceset="GND" device=""/>
 <part name="GND19" library="LEMS" deviceset="GND" device=""/>
-<part name="6.8UF-T" library="LEMS" deviceset="CE" device="S"/>
+<part name="10UF-T" library="LEMS" deviceset="CE" device="S"/>
 <part name="1" library="LEMS" deviceset="R" device="T"/>
 <part name="GND20" library="LEMS" deviceset="GND" device=""/>
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
@@ -2924,6 +2924,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <part name="SCHOTTKY" library="adafruit" deviceset="SCHOTTKY-DIODE" device="DO41"/>
 <part name="ZENER" library="LEMS" deviceset="1N4004" device=""/>
 <part name="U$7" library="LEMS" deviceset="3PH" device="S"/>
+<part name="U$16" library="LEMS" deviceset="2PH" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -3035,7 +3036,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <instance part="0.1UF-5" gate="G$1" x="251.46" y="35.56"/>
 <instance part="GND18" gate="1" x="251.46" y="27.94"/>
 <instance part="GND19" gate="1" x="215.9" y="43.18" rot="R270"/>
-<instance part="6.8UF-T" gate="G$1" x="246.38" y="71.12" rot="R90"/>
+<instance part="10UF-T" gate="G$1" x="246.38" y="71.12" rot="R90"/>
 <instance part="1" gate="G$1" x="256.54" y="71.12" rot="R180"/>
 <instance part="GND20" gate="1" x="264.16" y="71.12" rot="R90"/>
 <instance part="PWRSWTCH" gate="G$1" x="284.48" y="40.64"/>
@@ -3053,6 +3054,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <instance part="SCHOTTKY" gate="G$1" x="340.36" y="83.82"/>
 <instance part="ZENER" gate="1" x="332.74" y="81.28" rot="R90"/>
 <instance part="U$7" gate="G$1" x="261.62" y="228.6" rot="R90"/>
+<instance part="U$16" gate="G$1" x="261.62" y="210.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3268,6 +3270,14 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="332.74" y1="78.74" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="78.74" x2="327.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="81.28" x2="312.42" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$16" gate="G$1" pin="1"/>
+<pinref part="U$16" gate="G$1" pin="2"/>
+<wire x1="264.16" y1="215.9" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="220.98" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+<junction x="261.62" y="215.9"/>
+<label x="256.54" y="218.44" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_SOFT" class="0">
@@ -4437,7 +4447,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="6.8UF-T" gate="G$1" pin="2"/>
+<pinref part="10UF-T" gate="G$1" pin="2"/>
 <pinref part="1" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -4516,7 +4526,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <pinref part="U$18" gate="G$1" pin="OUT1"/>
 <wire x1="243.84" y1="48.26" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
 <junction x="243.84" y="53.34"/>
-<pinref part="6.8UF-T" gate="G$1" pin="1"/>
+<pinref part="10UF-T" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="71.12" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
 <junction x="243.84" y="63.5"/>
 <pinref part="5V_JUMP" gate="G$1" pin="1"/>
