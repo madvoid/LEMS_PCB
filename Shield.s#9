@@ -2926,6 +2926,7 @@ General purpose 1N400x type rectifier
 <part name="U$7" library="LEMS" deviceset="IRLZ34" device="T"/>
 <part name="U$16" library="LEMS" deviceset="RELAY" device="PTH4"/>
 <part name="D1" library="LEMS" deviceset="1N4004" device=""/>
+<part name="U$17" library="LEMS" deviceset="3PH" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -3070,6 +3071,7 @@ General purpose 1N400x type rectifier
 <instance part="U$7" gate="G$1" x="373.38" y="68.58"/>
 <instance part="U$16" gate="G$1" x="365.76" y="111.76"/>
 <instance part="D1" gate="1" x="350.52" y="111.76" rot="R90"/>
+<instance part="U$17" gate="G$1" x="363.22" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -3325,6 +3327,11 @@ General purpose 1N400x type rectifier
 <pinref part="U$7" gate="G$1" pin="S"/>
 <wire x1="373.38" y1="63.5" x2="373.38" y2="55.88" width="0.1524" layer="91"/>
 <label x="373.38" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="2"/>
+<wire x1="368.3" y1="152.4" x2="378.46" y2="152.4" width="0.1524" layer="91"/>
+<label x="378.46" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_SOFT" class="0">
@@ -4766,12 +4773,22 @@ General purpose 1N400x type rectifier
 <wire x1="373.38" y1="111.76" x2="378.46" y2="111.76" width="0.1524" layer="91"/>
 <label x="375.92" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="3"/>
+<wire x1="368.3" y1="154.94" x2="378.46" y2="154.94" width="0.1524" layer="91"/>
+<label x="378.46" y="154.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DUMMY" class="0">
 <segment>
 <pinref part="U$16" gate="G$1" pin="NC"/>
 <wire x1="373.38" y1="116.84" x2="378.46" y2="116.84" width="0.1524" layer="91"/>
 <label x="375.92" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="1"/>
+<wire x1="368.3" y1="149.86" x2="378.46" y2="149.86" width="0.1524" layer="91"/>
+<label x="378.46" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

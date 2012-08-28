@@ -1220,8 +1220,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="U$18" library="LEMS" package="DIL8" value="TPS7250D" x="25.908" y="18.796" rot="R270"/>
 <element name="250K" library="LEMS" package="0207/10" value="RN" x="25.908" y="25.4" rot="MR180"/>
 <element name="0.1UF-5" library="LEMS" package="C025-025X050" value="CCL" x="13.208" y="17.272" rot="R90"/>
-<element name="6.8UF-T" library="LEMS" package="E2,5-5" value="CES" x="34.29" y="21.336"/>
-<element name="1" library="LEMS" package="0207/7" value="RT" x="34.29" y="29.21" rot="MR270"/>
+<element name="10UF-T" library="LEMS" package="E2,5-5" value="CES" x="34.29" y="21.336"/>
+<element name="0.5" library="LEMS" package="0207/7" value="RT" x="34.29" y="29.21" rot="MR270"/>
 <element name="PWRSWTCH" library="LEMS" package="SWITCH-SPDT" value="SWITCHSPDTN" x="18.034" y="17.272" rot="R180"/>
 <element name="PWRTERM" library="LEMS" package="SCREWTERMINAL-3.5MM-2_LOCK" value="2PHS" x="8.128" y="6.35"/>
 <element name="5V_JUMP" library="LEMS" package="2PH" value="2PJN" x="34.29" y="16.256"/>
@@ -1276,7 +1276,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="0.1UF-5" pad="2"/>
 <contactref element="U$18" pad="3"/>
 <contactref element="U$18" pad="4"/>
-<contactref element="1" pad="1"/>
+<contactref element="0.5" pad="1"/>
 <contactref element="PWRTERM" pad="1"/>
 <contactref element="10UF-2" pad="-"/>
 <contactref element="OPA1TERM" pad="2"/>
@@ -2277,8 +2277,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="16.764" y1="16.002" x2="13.208" y2="16.002" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="6.8UF-T" pad="-"/>
-<contactref element="1" pad="2"/>
+<contactref element="10UF-T" pad="-"/>
+<contactref element="0.5" pad="2"/>
 <wire x1="35.56" y1="21.336" x2="34.29" y2="22.606" width="0.3048" layer="1"/>
 <wire x1="34.29" y1="22.606" x2="34.29" y2="25.4" width="0.3048" layer="1"/>
 </signal>
@@ -2361,7 +2361,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="U$18" pad="8"/>
 <contactref element="250K" pad="2"/>
 <contactref element="U$18" pad="7"/>
-<contactref element="6.8UF-T" pad="+"/>
+<contactref element="10UF-T" pad="+"/>
 <contactref element="5V_JUMP" pad="1"/>
 <wire x1="29.718" y1="22.606" x2="29.21" y2="22.606" width="0.8128" layer="1"/>
 <wire x1="29.21" y1="22.606" x2="22.098" y2="22.606" width="0.8128" layer="1"/>

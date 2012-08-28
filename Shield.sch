@@ -2897,7 +2897,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <part name="0.1UF-4" library="LEMS" deviceset="CC" device="L"/>
 <part name="OPA2TERM" library="LEMS" deviceset="3PH" device="N"/>
 <part name="DALLASTERM" library="LEMS" deviceset="3PH" device="S"/>
-<part name="4.7K" library="LEMS" deviceset="RESISTOR" device="T"/>
+<part name="4.7K" library="LEMS" deviceset="R" device="N"/>
 <part name="GND17" library="LEMS" deviceset="GND" device=""/>
 <part name="4.5VTERM" library="LEMS" deviceset="2PH" device="S"/>
 <part name="ADCTERM" library="LEMS" deviceset="3PH" device="S"/>

@@ -2907,7 +2907,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <part name="GND18" library="LEMS" deviceset="GND" device=""/>
 <part name="GND19" library="LEMS" deviceset="GND" device=""/>
 <part name="10UF-T" library="LEMS" deviceset="CE" device="S"/>
-<part name="1" library="LEMS" deviceset="R" device="T"/>
+<part name="0.5" library="LEMS" deviceset="R" device="T"/>
 <part name="GND20" library="LEMS" deviceset="GND" device=""/>
 <part name="PWRSWTCH" library="LEMS" deviceset="SWITCHSPDT" device="N"/>
 <part name="PWRTERM" library="LEMS" deviceset="2PH" device="S"/>
@@ -3037,7 +3037,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <instance part="GND18" gate="1" x="251.46" y="27.94"/>
 <instance part="GND19" gate="1" x="215.9" y="43.18" rot="R270"/>
 <instance part="10UF-T" gate="G$1" x="246.38" y="71.12" rot="R90"/>
-<instance part="1" gate="G$1" x="256.54" y="71.12" rot="R180"/>
+<instance part="0.5" gate="G$1" x="256.54" y="71.12" rot="R180"/>
 <instance part="GND20" gate="1" x="264.16" y="71.12" rot="R90"/>
 <instance part="PWRSWTCH" gate="G$1" x="284.48" y="40.64"/>
 <instance part="PWRTERM" gate="G$1" x="307.34" y="43.18"/>
@@ -3234,7 +3234,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <junction x="218.44" y="43.18"/>
 </segment>
 <segment>
-<pinref part="1" gate="G$1" pin="1"/>
+<pinref part="0.5" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4448,7 +4448,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="10UF-T" gate="G$1" pin="2"/>
-<pinref part="1" gate="G$1" pin="2"/>
+<pinref part="0.5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWRN" class="0">

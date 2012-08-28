@@ -3554,13 +3554,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <label x="124.46" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="D5" class="0">
-<segment>
-<pinref part="0-7" gate="G$1" pin="3"/>
-<wire x1="127" y1="243.84" x2="127" y2="233.68" width="0.1524" layer="91"/>
-<label x="127" y="231.14" size="1.27" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="TN9_ACT" class="0">
 <segment>
 <pinref part="0-7" gate="G$1" pin="4"/>
@@ -3587,14 +3580,14 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </net>
 <net name="TN9_DATA" class="0">
 <segment>
-<pinref part="0-7" gate="G$1" pin="6"/>
-<wire x1="134.62" y1="243.84" x2="134.62" y2="233.68" width="0.1524" layer="91"/>
-<label x="134.62" y="231.14" size="1.27" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="TN9TERM" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="233.68" x2="289.56" y2="243.84" width="0.1524" layer="91"/>
 <label x="289.56" y="243.84" size="1.27" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="0-7" gate="G$1" pin="3"/>
+<wire x1="127" y1="243.84" x2="127" y2="233.68" width="0.1524" layer="91"/>
+<label x="127" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX0" class="0">
@@ -4543,6 +4536,13 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <pinref part="ZENER" gate="1" pin="C"/>
 <wire x1="332.74" y1="83.82" x2="312.42" y2="83.82" width="0.1524" layer="91"/>
 <junction x="332.74" y="83.82"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="0-7" gate="G$1" pin="6"/>
+<wire x1="134.62" y1="243.84" x2="134.62" y2="233.68" width="0.1524" layer="91"/>
+<label x="134.62" y="231.14" size="1.27" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
